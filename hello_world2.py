@@ -1,6 +1,8 @@
 from gimpfu import *
 
 def hello_world(initstr, font, size, color):
+    if font == "Comic Sans MS":
+        initstr = "Comic Sans? Really?"
     # 1, 1 is the initial size of Image
     # that will be expanded to text size later
     img = gimp.Image(1, 1, RGB)
@@ -19,4 +21,4 @@ def hello_world(initstr, font, size, color):
     # finally display the image
     gimp.Display(img)
 
-hello_world("Hello, World!", "Arial", 72, "#ffffff")
+hello_world("Hello, World!", "Comic Sans MS", 72, "#ffffff")
