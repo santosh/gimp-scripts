@@ -38,6 +38,7 @@ register(
     "",
     # this is for GUI part
     [
+        # (UI_ELEMENTS, "variable", "Label", Default)
         (PF_STRING, "string", "String", "Hello, World!"),
         (PF_FONT, "font", "Font face", "Sans"),
         (PF_SPINNER, "size", "Font size", 50, (1, 3000, 1)),
@@ -45,7 +46,7 @@ register(
     ],
     [],  # this is also blank, do you know why? edit this comment if you found
     # and where is the menu?
-    hello_world, menu="<Image>/File/Create"
+    hello_world, menu="<Image>/Filters/gimptosh"
 )
 
 main()
